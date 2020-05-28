@@ -25,7 +25,7 @@
 
         //load in csv file with population and density 
         //updated to d3v5 from d3v3 from references below:
-        //main references: http://bl.ocks.org/mbaba/78e2c2295c632a1f0985
+        //main references: http://bl.ocks.org/mbaba/78e2c2295c632a1f0985 : csv file is taken from here, edited slightly for the names to match the Json file
         //and 05_choropleth.html from the book
         d3.csv("PolandPop.csv").then(function(data){
             
@@ -60,7 +60,6 @@
                             
                             //check if names are the same
 							if (dataWoj == jsonWoj) {
-                                //console.log("got here");
                                 
 								json.features[j].properties.density = densityWoj;
 								
